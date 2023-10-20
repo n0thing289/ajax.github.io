@@ -14,7 +14,7 @@
 - 传统请求存在的问题
   - `页面全部刷新导致了用户的体验较差。`
   - 传统的请求导致用户的体验有空白期。（用户的体验是不连贯的）
-  - ![AJAX同步请求](C:\Users\niannian\Desktop\AJAX\笔记\AJAX同步请求.png)
+  - ![AJAX同步请求](.\AJAX同步请求.png)
 
 ## AJAX概述
 
@@ -45,26 +45,26 @@
 
 - XMLHttpRequest对象的方法
 
-| 方法                                          | 描述                                                         |
-| :-------------------------------------------- | :----------------------------------------------------------- |
-| abort()                                       | 取消当前请求                                                 |
-| getAllResponseHeaders()                       | 返回头部信息                                                 |
-| getResponseHeader()                           | 返回特定的头部信息                                           |
-| open(*method*, *url*, *async*, *user*, *psw*) | 规定请求method：请求类型 GET 或 POSTurl：文件位置async：true（异步）或 false（同步）user：可选的用户名称psw：可选的密码 |
-| send()                                        | 将请求发送到服务器，用于 GET 请求                            |
-| send(*string*)                                | 将请求发送到服务器，用于 POST 请求                           |
-| setRequestHeader()                            | 向要发送的报头添加标签/值对                                  |
+| 方法                                            | 描述                                                         |
+| :---------------------------------------------- | :----------------------------------------------------------- |
+| abort()                                         | 取消当前请求                                                 |
+| getAllResponseHeaders()                         | 返回头部信息                                                 |
+| getResponseHeader()                             | 返回特定的头部信息                                           |
+| `open(*method*, *url*, *async*, *user*, *psw*)` | 规定请求method：请求类型 GET 或 POSTurl：文件位置async：true（异步）或 false（同步）user：可选的用户名称psw：可选的密码 |
+| `send()`                                        | 将请求发送到服务器，用于 GET 请求                            |
+| send(*string*)                                  | 将请求发送到服务器，用于 POST 请求                           |
+| setRequestHeader()                              | 向要发送的报头添加标签/值对                                  |
 
 - XMLHttpRequest对象的属性
 
-| 属性               | 描述                                                         |
-| :----------------- | :----------------------------------------------------------- |
-| onreadystatechange | 定义当 readyState 属性发生变化时被调用的函数                 |
-| `readyState`       | 保存 XMLHttpRequest 的状态。0：请求未初始化     1：服务器连接已建立     2：请求已收到    3：正在处理请求    4：请求已完成且响应已就绪 |
-| responseText       | 以字符串返回响应数据                                         |
-| responseXML        | 以 XML 数据返回响应数据                                      |
-| status             | 返回请求的状态号200: "OK"403: "Forbidden"404: "Not Found"    |
-| statusText         | 返回状态文本（比如 "OK" 或 "Not Found"）                     |
+| 属性                 | 描述                                                         |
+| :------------------- | :----------------------------------------------------------- |
+| `onreadystatechange` | 定义当 readyState 属性发生变化时被调用的函数                 |
+| `readyState`         | 保存 XMLHttpRequest 的状态。0：请求未初始化     1：服务器连接已建立     2：请求已收到    3：正在处理请求    4：请求已完成且响应已就绪 |
+| `responseText`       | 以字符串返回响应数据                                         |
+| responseXML          | 以 XML 数据返回响应数据                                      |
+| `status`             | 返回请求的状态号200: "OK"403: "Forbidden"404: "Not Found"    |
+| statusText           | 返回状态文本（比如 "OK" 或 "Not Found"）                     |
 
 ## AJAX GET请求
 
