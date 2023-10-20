@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            let helloBtn = document.querySelector(".hello");
+            helloBtn.onclick = function () {
+                //发送ajax请求
+                //1. 新建xhr对象
+                let xhr = new XMLHttpRequest();
+                //2. readystatechange事件绑定
+                xhr.onreadystatechange = function () {
+                    //会走4次 0-1 1-2 2-3 3-4
+                    console.log(xhr.readyState)
+                    if (xhr.readyState === 4) {
+                        console.log("响应结束了")
+                        if (xhr.status === 404) {
+                            alert("服务器找不到资源");
+                        } else if (xhr.status === 500) {
+                            alert("服务器内部发送重大错误")
+                        } else if (xhr.status === 200) {
+                            alert("完美响应!")
+                            //用xhr.responseText 属性来接收响应的数据
+                            let response = xhr.responseText
+                            alert(response)
+                            //将数据放到div图层中
+                            let div = document.querySelector(".show");
+                            div.innerText = response
+                        }
+
+                    }
+                }
+                //3. 打开通道
+                // open(*method*, *url*, *async*, *user*, *psw*)
+                // 规定请求method：请求类型 GET 或 POSTurl：文件位置async：true（异步）或 false（同步）user：可选的用户名称psw：可选的密码
+                xhr.open("GET", "/ajax/ajaxrequest01", true)
+                //4. 发送请求
+                xhr.send()
+            }
+        }
+    </script>
+</head>
+<body>
+<!--写一个按钮，用户点击之后，会发送一个ajax请求-->
+<input type="button" value="hello AJAX!" class="hello">
+<!---->
+<div class="show">
+    <p class="p">1</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复习发送第一个ajax请求</title>
+    <script>
+        window.onload = function () {
+            //给按钮绑定事件
+            let helloBtn = document.querySelector(".helloBtn");
+            helloBtn.addEventListener("click", function () {
+                //发送ajax请求
+                //1. new 一个XHR对象
+                let xhr = new XMLHttpRequest()
+                //2. 绑定事件
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        console.log("响应结束")
+                        if (this.status === 200) {
+                            alert("完美响应!")
+                            //获取响应数据
+                            let response = this.responseText
+                            //传给div
+                            let showDiv = document.querySelector(".showDiv");
+                            showDiv.innerHTML = response;
+                        }
+                    }
+                })
+                //3.
+                //获取文本框的参数
+                let username = document.querySelector(".username")
+                let password = document.querySelector(".password")
+                xhr.open("GET", "/ajax/ajaxrequest02?username=" + username.value + "&password=" + password.value, true)
+                //4.
+                xhr.send()
+            })
+        }
+    </script>
+</head>
+<body>
+username:<input type="text" class="username">
+password:<input type="text" class="password">
+<!--    写一个按钮,用户点击的时候发送ajax请求-->
+<input type="button" value="hello" class="helloBtn">
+<!--定义一个盒子,用于接收将来的相应信息-->
+<br>
+<span class="showDiv">111</span>
+</body>
+</html>

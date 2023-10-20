@@ -28,8 +28,8 @@
 - AJAX 应用程序可能使用 XML 来传输数据，但将数据作为纯文本或 JSON 文本传输也同样常见。
 - AJAX可以更新网页的部分，而不需要重新加载整个页面。（页面局部刷新）
 - AJAX可以做到在同一个网页中同时启动多个请求，类似于在同一个网页中启动“多线程”，一个“线程”一个“请求”。
-- ![](C:\Users\niannian\Desktop\AJAX\笔记\AJAX异步请求.png)
-- ![](C:\Users\niannian\Desktop\AJAX\笔记\对AJAX异步请求的理解.png)
+- ![](.\AJAX异步请求.png)
+- ![](.\对AJAX异步请求的理解.png)
 
 ## XMLHttpRequest对象
 
@@ -60,7 +60,7 @@
 | 属性               | 描述                                                         |
 | :----------------- | :----------------------------------------------------------- |
 | onreadystatechange | 定义当 readyState 属性发生变化时被调用的函数                 |
-| readyState         | 保存 XMLHttpRequest 的状态。0：请求未初始化     1：服务器连接已建立     2：请求已收到    3：正在处理请求    4：请求已完成且响应已就绪 |
+| `readyState`       | 保存 XMLHttpRequest 的状态。0：请求未初始化     1：服务器连接已建立     2：请求已收到    3：正在处理请求    4：请求已完成且响应已就绪 |
 | responseText       | 以字符串返回响应数据                                         |
 | responseXML        | 以 XML 数据返回响应数据                                      |
 | status             | 返回请求的状态号200: "OK"403: "Forbidden"404: "Not Found"    |
