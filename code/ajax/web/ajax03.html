@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+    <script>
+        window.onload = function () {
+            let myBtn = document.querySelector(".myBtn");
+            myBtn.addEventListener("click", function () {
+                //发送Ajax请求
+                //1.
+                let xhr = new XMLHttpRequest();
+                //2.
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        if (this.status === 200) {
+                            let myDiv = document.querySelector(".myDiv");
+                            myDiv.innerHTML = this.responseText;
+                        } else {
+                            alert(this.status)
+                        }
+                    }
+                })
+                //
+                xhr.open("POST", "/ajax/ajaxrequest03", true)
+                //
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+                let username = document.querySelector(".username")
+                let password = document.querySelector(".password")
+                xhr.send("username=" + username.value + "&password=" + password.value)//格式不能乱来，任然准寻http协议的？key=value&key=value
+            })
+        }
+    </script>
+</head>
+<body>
+用户名：<input type="text" class="username"> <br>
+密 码：<input type="password" class="password"><br>
+<button class="myBtn">发送POST AJAX请求</button>
+<div class="myDiv">11</div>
+</body>
+</html>

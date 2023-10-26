@@ -171,7 +171,7 @@
   - 缺点：无法实时获取最新的服务器资源。
 - 浏览器什么时候会走缓存？
   - 第一：是一个GET请求
-  - 第二：请求路径已经被浏览器缓存过了。第二次发送请求的时候，这个路径没有变化，会走浏览器缓存。
+  - 第二：请求路径已经被浏览器缓存过了。第二次发送请求的时候，这个路径没有变化，会走浏览器缓存(服务器不会执行那个url)。
 - 如果是低版本的IE浏览器，怎么解决AJAX GET请求的缓存问题呢？
   - 可以在请求路径url后面添加一个时间戳，这个时间戳是随时变化的。所以每一次发送的请求路径都是不一样的，这样就不会走浏览器的缓存问题了。
   - 可以采用时间戳："url?t=" + new Date().getTime()
@@ -184,7 +184,7 @@
 
   ```javascript
   // 4. 发送AJAX POST请求
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded") // 设置请求头的内容类型。模拟form表单提交数据。
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded") // 设置请求头的内容类型。模拟form表单提交数据。必须在open()之后写
   // 获取表单中的数据
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;

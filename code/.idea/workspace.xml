@@ -7,6 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95742093-11c6-45d8-84b1-52544468d43d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_7_bin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/ajax.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/ajax.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../笔记/AJAX.md" beforeDir="false" afterPath="$PROJECT_DIR$/../笔记/AJAX.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,13 +48,24 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ajax/web/WEB-INF/lib" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\web\WEB-INF\lib" />
+      <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\src" />
+      <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\src\util" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.78">
+    <configuration name="ajax06.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/ajax/ajax06.html">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 9.0.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -139,6 +153,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.ajax06.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -153,6 +172,12 @@
       <workItem from="1697697594481" duration="982000" />
       <workItem from="1697698722737" duration="4860000" />
       <workItem from="1697716040833" duration="3238000" />
+      <workItem from="1697799613830" duration="2727000" />
+      <workItem from="1697952241395" duration="7079000" />
+      <workItem from="1698059293184" duration="4289000" />
+      <workItem from="1698120703615" duration="2996000" />
+      <workItem from="1698230937023" duration="4212000" />
+      <workItem from="1698300246157" duration="563000" />
     </task>
     <servers />
   </component>

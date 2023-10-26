@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例-点击显示学院列表</title>
+    <script>
+        window.onload = function () {
+            let btn = document.querySelector(".btn");
+            btn.addEventListener("click", function () {
+                //发送ajax请求
+                //1.
+                let xhr = new XMLHttpRequest();
+                //2.
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        if (this.status === 200) {
+                            alert("请求响应成功")
+                            let tbody = document.querySelector(".table_body");
+                            //TODO
+                            let jsonArr = JSON.parse(this.responseText);
+                            console.log(jsonArr)
+                            let html = "";
+                            for (let i = 0; i < jsonArr.length; i++) {
+                                let j = jsonArr[i]
+                                html += "<tr>" +
+                                    "<td>" + (i + 1) + "</td>" +
+                                    "<td>" + j.name + "</td>" +
+                                    "<td>" + j.age + "</td>" +
+                                    "<td>" + j.addr + "</td>" +
+                                    "</tr>"
+                            }
+                            tbody.innerHTML = html
+                        } else {
+                            alert("请求响应失败")
+                        }
+                    }
+                })
+                //3.
+                xhr.open("GET", "/ajax/ajaxrequest06", true)
+                //4.
+                xhr.send()
+            })
+        }
+    </script>
+</head>
+<body>
+<!--在后端java程序中拼接HTML代码，然后将HTML代码直接响应到浏览器客户端。
+这种方式不好，不应该在java代码中编写HTML代码，能否在java程序中直接向前端响应数据？
+可以，可以在后端拼接JSON格式的字符串，或者XML格式的字符串，将这个字符串发送给前端，前端解析即可。-->
+<button class="btn">点击发送ajax请求</button>
+<table width="50%" border="1px">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>住址</th>
+    </tr>
+    </thead>
+    <tbody class="table_body">
+    <!--            <tr>-->
+    <!--                <td>1</td>-->
+    <!--                <td>张三</td>-->
+    <!--                <td>20</td>-->
+    <!--                <td>北京</td>-->
+    <!--            </tr>-->
+    <!--            <tr>-->
+    <!--                <td>2</td>-->
+    <!--                <td>李四</td>-->
+    <!--                <td>22</td>-->
+    <!--                <td>北京海淀区</td>-->
+    <!--            </tr>-->
+    </tbody>
+</table>
+</body>
+</html>

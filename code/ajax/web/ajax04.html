@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证用户名是否可用</title>
+    <script>
+        window.onload = function () {
+            //获取文本框
+            let username = document.querySelector(".username");
+            //用户文本框注册一个失去焦点事件,发送ajax请求
+            username.addEventListener("blur", function () {
+                //发送ajax请求
+                //1.
+                let xhr = new XMLHttpRequest();
+                //2.
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        if (this.status === 200) {
+                            //ok
+                            //获取span标签
+                            let mySpan = document.querySelector(".mySpan");
+                            //给他渲染元素
+                            mySpan.innerHTML = this.responseText;
+                        } else {
+                            //失败
+                            alert("出现200错误")
+                        }
+                    }
+                })
+                //3.
+                xhr.open("POST", "/ajax/verifyusername", true)
+                //4.
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+                xhr.send("username=" + username.value)
+            })
+
+        }
+    </script>
+</head>
+<body>
+<form>
+    用户名<input type="text" class="username"> <span class="mySpan"></span> <br>
+    密 码<input type="password" class="password"> <br>
+    <input type="submit" value="注册">
+</form>
+
+</body>
+</html>
