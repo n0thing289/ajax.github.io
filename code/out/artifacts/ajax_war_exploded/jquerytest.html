@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试我们自己编写的jQuery库</title>
+    <script src="js/jQuery.js"></script>
+    <script>
+        $(function(){
+            $("#btn").click(function(){
+                alert("hello")
+                //获取文本框的值
+                alert($("#usercode").val())
+                //修改文本框的内容
+                $("#usercode").val("ikun")
+                //设置div内容
+                $("#div1").html("jQuery牛逼!")
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn">hello</button>
+    用户名: <input type="text" id="usercode"><br>
+    <div id="div1"></div>
+</body>
+</html>

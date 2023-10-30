@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>研究同步代码和异步代码的区别</title>
+    <script>
+        window.onload = function () {
+            document.querySelector(".btn1").addEventListener("click",function(){
+                //发送ajax请求
+                //1.
+                let xhr = new XMLHttpRequest()
+                //2.
+                xhr.onreadystatechange = function(){
+                    if(this.readyState === 4){
+                        if(this.status === 200){
+                            document.querySelector(".div1").innerHTML = this.responseText
+                        }
+                    }
+                }
+                //3.
+                xhr.open("GET", "/ajax/ajaxrequest08",false)
+                //4.
+                xhr.send()
+            })
+
+            document.querySelector(".btn2").addEventListener("click",function(){
+                //发送ajax请求
+                //1.
+                let xhr = new XMLHttpRequest()
+                //2.
+                xhr.onreadystatechange = function(){
+                    if(this.readyState === 4){
+                        if(this.status === 200){
+                            document.querySelector(".div2").innerHTML = this.responseText
+                        }
+                    }
+                }
+                //3.
+                xhr.open("GET", "/ajax/ajaxrequest09",true)
+                //4.
+                xhr.send()
+            })
+        }
+    </script>
+</head>
+<body>
+<button class="btn1">发送ajax请求</button>
+<div class="div1"></div>
+
+<button class="btn2">发送ajax请求</button>
+<div class="div2"></div>
+</body>
+</html>

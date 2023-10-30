@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手动封装JS库jQuery</title>
+    <script>
+        function jQuery(selector) {
+            if (typeof selector === "string") {
+                if (selector.charAt(0) === "#") {
+                    domObj = document.getElementById(selector.substring(1));
+                    return new jQuery();
+                }
+            }
+            //页面加载完成后,注册回调函数
+            if (typeof selector === "function") {
+                window.onload = selector
+            }
+            //封装innerHtml
+            this.html = function (htmlText) {
+                domObj.innerHTML = htmlText
+            }
+            //封装onclick
+            this.click = function (fun) {
+                domObj.onclick = fun
+            }
+            //封装文本框的值
+            this.val = function(v){
+                if(v !== undefined){//如果形参没有传参, 是默认为undefined数据类型的
+                    domObj.value = v
+                }
+                return domObj.value
+            }
+        }
+
+        $ = jQuery
+
+        // window.onload = function () {
+        //     // document.getElementById("btn").onclick = function () {
+        //     //     document.getElementById("div1").innerHTML = "<font color='red'>用户名不可用</font>"
+        //     // }
+        //
+        //     $("#btn").onclick = function () {
+        //         $("#div1").innerHTML = "<font color='red'>用户名不可用</font>"
+        //     }
+        // }
+
+        //$(function(){}) 表示页面加载后,会执行这里面函数
+        $(function () {
+            $("#btn").click(function () {
+                $("#div1").html("<font color='red'>4444用户名不可用</font>")
+                //获取文本框的用户名
+                // let v = document.querySelector("#username").value
+
+                alert($("#username").val())
+            });
+        })
+    </script>
+</head>
+<body>
+用户名: <input type="text" id="username">
+<button id="btn">显示信息</button>
+<div id="div1"></div>
+</body>
+</html>

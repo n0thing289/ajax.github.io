@@ -263,6 +263,8 @@
 
 - 注意：如果服务器端响应XML的话，响应的内容类型需要写成：
 
+  - 如果是前端接收xml的话，需要用`this.responseXML`替换this.responseText
+
   ```java
   response.setContentType("text/xml;charset=UTF-8");
   ```
@@ -493,6 +495,12 @@
 - AJAX请求相关的代码都是类似的，有很多重复的代码，这些重复的代码能不能不写，能不能封装一个工具类。要发送ajax请求的话，就直接调用这个工具类中的相关函数即可。
 
 - 接下来，手动封装一个工具类，这个工具类我们可以把它看做是一个JS的库。我们把这个JS库起一个名字，叫做jQuery。（我这里封装的jQuery只是一个前端的库，和后端的java没有关系，只是为了方便web前端代码的编写，提高WEB前端的开发效率）
+
+- 封装了什么？
+
+  - document.getElementById()
+
+  - window.onload
 
 - 手动开发jQuery，源代码
 

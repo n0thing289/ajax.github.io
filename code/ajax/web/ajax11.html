@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>封装ajax到js库</title>
+    <script src="js/jQuery.js"></script>
+    <script>
+        window.onload = function () {
+            let input = document.querySelector("#input");
+            let btn = document.querySelector("#btn");
+            let div = document.querySelector("#div1")
+
+            btn.onclick = function () {
+                $.ajax({
+                    method: "post",
+                    url: "/ajax/ajaxrequest11",
+                    async: true,
+                    data: "username=" + input.value,
+                    success: function (responseText) {
+                        $("#div1").html(responseText)
+                        alert("封装ajax请求成功")
+                    }
+                })
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+用户名: <input type="text" id="input">
+<button id="btn">发送post请求</button>
+<br>
+<div id="div1"></div>
+</body>
+</html>

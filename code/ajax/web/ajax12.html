@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试我们自己开发的jQuery库</title>
+    <script src="js/jQuery.js"></script>
+    <script>
+        $(function(){
+            $(".username").click(function(){
+                //发送ajax请求
+                $.ajax({
+                    method:"get",
+                    url:"/ajax/ajaxrequest12",
+                    async:true,
+                    data:"",
+                    success:function(){
+
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<button class="myBtn">发送ajax请求, POST GET</button>
+用户名: <input class="username">
+<div class="div1"></div>
+</body>
+</html>

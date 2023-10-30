@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95742093-11c6-45d8-84b1-52544468d43d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_7_bin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajax/ajax.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/ajax.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../笔记/AJAX.md" beforeDir="false" afterPath="$PROJECT_DIR$/../笔记/AJAX.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -61,9 +60,15 @@
       <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\src" />
       <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\src\util" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\web\js" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.78">
     <configuration name="ajax06.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/ajax/ajax06.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="ajax11.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/ajax/ajax11.html">
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -155,6 +160,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.ajax11.html" />
         <item itemvalue="JavaScript Debug.ajax06.html" />
       </list>
     </recent_temporary>
@@ -177,7 +183,13 @@
       <workItem from="1698059293184" duration="4289000" />
       <workItem from="1698120703615" duration="2996000" />
       <workItem from="1698230937023" duration="4212000" />
-      <workItem from="1698300246157" duration="563000" />
+      <workItem from="1698300246157" duration="815000" />
+      <workItem from="1698318133232" duration="4101000" />
+      <workItem from="1698460421716" duration="2748000" />
+      <workItem from="1698496448002" duration="3382000" />
+      <workItem from="1698557436422" duration="7636000" />
+      <workItem from="1698566307331" duration="406000" />
+      <workItem from="1698639175487" duration="2732000" />
     </task>
     <servers />
   </component>

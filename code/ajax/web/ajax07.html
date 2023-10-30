@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个xml数据交换</title>
+    <script>
+        window.addEventListener("load", function () {
+            //获取按钮dom对象
+            let myBtn = document.querySelector(".myBtn");
+            //绑定点击事件发送ajax请求
+            myBtn.addEventListener("click", function () {
+                //发送ajax请求
+                //1.
+                let xhr = new XMLHttpRequest();
+                //2.
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        if (this.status === 200) {
+                            //200
+                            console.log(this.responseText)
+                            let xmlObj = this.responseXML
+                            console.log(this.responseXML)
+                            //获取服务器传过来的xml数据
+                            let students = xmlObj.getElementsByTagName("student");
+                            //遍历students
+                            let html = ""
+                            for (let i = 0; i < students.length; i++) {
+                                html += "<tr>"
+                                html += "<td>" + (i + 1) + "</td>"
+                                let student = students[i]
+                                //获取student下的子标签
+                                let nameOrAge = student.childNodes
+                                for (let j = 0; j < nameOrAge.length; j++) {
+                                    let node = nameOrAge[j]
+                                    if (node.nodeName === "name") {
+                                        html += "<td>" + node.textContent + "</td>"
+                                    }
+                                    if (node.nodeName === "age") {
+                                        html += "<td>" + node.textContent + "</td>"
+                                    }
+                                    if (node.nodeName === "addr") {
+                                        html += "<td>" + node.textContent + "</td>"
+                                    }
+                                }
+                                html += "</tr>"
+                            }
+
+                            let mytbody = document.querySelector(".mytbody");
+                            mytbody.innerHTML = html;
+                        } else {
+                            //404
+                        }
+                    }
+                })
+                //3.
+                xhr.open("GET", "/ajax/ajaxrequest07", true)
+                //4.
+                xhr.send()
+            })
+
+        })
+    </script>
+</head>
+<body>
+<button class="myBtn">发送ajax请求xml数据</button>
+<table width="50%" border="1px black solid">
+    <thead>
+    <tr>
+        <td>序号</td>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>地址</td>
+    </tr>
+    </thead>
+    <tbody class="mytbody">
+    <tr>
+        <td>1</td>
+        <td>hwk</td>
+        <td>22</td>
+        <td>回宫支援</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>zwf</td>
+        <td>22</td>
+        <td>美国芝加哥</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
