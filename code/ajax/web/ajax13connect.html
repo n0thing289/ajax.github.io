@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现省市联动的效果</title>
+    <script src="js/jQuery.js"></script>
+
+    <script>
+        //用户加载完毕就发送一个ajax请求拿到省份数据
+        $(function () {
+            $.ajax({
+                method: "GET",
+                url: "/ajax/ajaxrequest13/getprovinces",
+                async: true,
+                data: "",
+                success: function (responseText) { //响应了一个json对象数组
+                    // console.log(responseText)
+
+                    let jsonArr = JSON.parse(responseText);
+                    let option = ""
+                    for (let i = 0; i < jsonArr.length; i++) {
+                        let json = jsonArr[i]
+
+                        option += "<option value='" + json.id + "'>" + json.name + "</option>"
+                    }
+                    //拿到下拉菜单对象，修改内容
+                    $(".provinces").html(option)
+                }
+            })
+
+            $(".provinces").change(function(){
+
+                console.log($(".provinces").val())
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+<select class="provinces">
+    <!--        <option value="">&#45;&#45;请选择省份&#45;&#45;</option>-->
+    <!--        <option value="001">广东省</option>-->
+    <!--        <option value="002">福建省</option>-->
+</select>
+
+<select class="cities">
+
+</select>
+</body>
+</html>

@@ -8,7 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="95742093-11c6-45d8-84b1-52544468d43d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../笔记/AJAX.md" beforeDir="false" afterPath="$PROJECT_DIR$/../笔记/AJAX.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/web/ajax12.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/ajax12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/web/js/jQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/js/jQuery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/js/jQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/js/jQuery.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,9 +52,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ajax/web/WEB-INF/lib" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -72,6 +76,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ajax:war exploded">
@@ -158,6 +163,11 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.ajax06.html" />
+      <item itemvalue="JavaScript Debug.ajax11.html" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.78" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.ajax11.html" />
@@ -189,7 +199,9 @@
       <workItem from="1698496448002" duration="3382000" />
       <workItem from="1698557436422" duration="7636000" />
       <workItem from="1698566307331" duration="406000" />
-      <workItem from="1698639175487" duration="2732000" />
+      <workItem from="1698639175487" duration="3116000" />
+      <workItem from="1698647074763" duration="3709000" />
+      <workItem from="1698663752010" duration="3934000" />
     </task>
     <servers />
   </component>
