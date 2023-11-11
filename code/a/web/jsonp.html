@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用jsonp的思想来解决跨域问题</title>
+    <script src="js/jQuery.js"></script>
+    <script>
+        function sayHello(responseData) {
+            $(".showBox").html(responseData.name)
+            // alert("hi")
+        }
+        $(() => {
+            //当用户点击按钮,创建一个带src请求路径的script标签
+            $(".myBtn").click(() => {
+                //create
+                let script = document.createElement("script");
+                //设置src
+                script.src = "http://localhost:8082/b/jsonp?fun=sayHello";
+                //添加到body标签内
+                document.querySelector("body").appendChild(script)
+            })
+        })
+    </script>
+</head>
+<body>
+<!--    <script src="http://localhost:8082/b/jsonp?fun=sayHello">-->
+<!--        //后端传过来东西,会被当做js代码执行-->
+<!--    </script>-->
+    <button class="myBtn">点击按钮,发送一个script请求并执行在下方</button>
+    <div class="showBox"></div>
+</body>
+</html>

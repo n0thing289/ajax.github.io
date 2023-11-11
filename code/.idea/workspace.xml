@@ -2,15 +2,27 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ajax:war exploded" />
+      <artifact name="a:war exploded" />
     </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95742093-11c6-45d8-84b1-52544468d43d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/a_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/b_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a/a.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/b/b.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajax/web/ajax12.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/ajax12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajax/web/js/jQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/js/jQuery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/js/jQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/js/jQuery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/src/servlet/AjaxRequestServlet13.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/src/servlet/AjaxRequestServlet13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/web/ajax13connect.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/ajax13connect.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/WEB-INF/classes/servlet/AjaxRequestServlet13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/WEB-INF/classes/servlet/AjaxRequestServlet13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/ajax13connect.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/ajax13connect.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../笔记/AJAX.md" beforeDir="false" afterPath="$PROJECT_DIR$/../笔记/AJAX.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../笔记/省市联动数据表.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +33,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -38,6 +58,18 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Myapps/maven/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\Myapps\maven\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="2WwDz9gxqt1edyHR1dCNM0r81xL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -51,15 +83,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ajax/web/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/a/web/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\a\web\js" />
+      <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\web\js" />
       <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\web\WEB-INF\lib" />
       <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\src" />
       <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\src\util" />
@@ -68,25 +102,27 @@
       <recent name="E:\编程文件\AJAX老杜\ajax.github.io\code\ajax\web\js" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.78">
+  <component name="RunManager" selected="Tomcat Server.Tomcat_a">
     <configuration name="ajax06.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/ajax/ajax06.html">
       <method v="2" />
     </configuration>
     <configuration name="ajax11.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/ajax/ajax11.html">
       <method v="2" />
     </configuration>
-    <configuration name="Tomcat 9.0.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat_a" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="ajax:war exploded">
+        <artifact name="a:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/ajax" />
+            <option name="CONTEXT_PATH" value="/a" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="72b77ed4-cabe-4110-9cea-85d9d4309c6a" />
+        <option name="BASE_DIRECTORY_NAME" value="bdbd3bdd-e6c5-439d-a435-1150f5bce90f" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1100" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -94,7 +130,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53594" />
+        <option name="DEBUG_PORT" value="51398" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -159,14 +195,105 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="ajax:war exploded" />
+          <artifact name="a:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Tomcat_b" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="b:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/b" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="d4d3b8d6-c6fa-4079-8a28-dc9448acaeea" />
+        <option name="HTTP_PORT" value="8082" />
+        <option name="JNDI_PORT" value="1101" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52121" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="b:war exploded" />
         </option>
       </method>
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.ajax06.html" />
       <item itemvalue="JavaScript Debug.ajax11.html" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.78" />
+      <item itemvalue="Tomcat Server.Tomcat_a" />
+      <item itemvalue="Tomcat Server.Tomcat_b" />
     </list>
     <recent_temporary>
       <list>
@@ -202,6 +329,16 @@
       <workItem from="1698639175487" duration="3116000" />
       <workItem from="1698647074763" duration="3709000" />
       <workItem from="1698663752010" duration="3934000" />
+      <workItem from="1698725909730" duration="5056000" />
+      <workItem from="1698746354476" duration="2147000" />
+      <workItem from="1698839449572" duration="68000" />
+      <workItem from="1698921577655" duration="3948000" />
+      <workItem from="1698981221390" duration="2973000" />
+      <workItem from="1698992622180" duration="2137000" />
+      <workItem from="1699011452041" duration="941000" />
+      <workItem from="1699072824124" duration="14467000" />
+      <workItem from="1699248063461" duration="6924000" />
+      <workItem from="1699413695971" duration="1666000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动补全和搜索联想</title>
+    <style>
+        * {
+            text-decoration: none
+        }
+        .showBox {
+            width: 177px;
+            position: relative;
+            left: -37px;
+            top: -1px;
+        }
+
+        a {
+            display: block;
+            height: 25px;
+            /*border: 1px solid black;*/
+            color: black;
+        }
+
+        a:hover {
+            cursor:pointer;
+            color: blue;
+            background-color: #DCDCDC;
+        }
+
+    </style>
+<!--    <script src="js/jquery-3.6.0.min.js"></script>-->
+    <script>
+        window.onload = () => {
+            let sousuo = document.querySelector(".sousuo")
+            let showBox = document.querySelector(".showBox")
+
+            let searchCache = null;
+            //注册keyup事件
+            sousuo.addEventListener("input", function () {
+                //发送ajax请求
+                //1.
+                let xhr = new XMLHttpRequest()
+                //2.
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        if (this.status === 200) {
+                            //解析json
+                            let response = JSON.parse(this.responseText)
+                            searchCache = response;
+                            console.log(response + "=" + response.length)
+                            //解析json,并将数据展示到下方div中
+                            if (response.length > 0) {
+                                let html = "";
+                                for (let i = 0; i < response.length; i++) {
+                                    let jsonObj = response[i]
+                                    let id = jsonObj.id
+                                    let question = jsonObj.question
+
+                                    html += "<a id='" + id + "'>" + question + "</a>"
+                                }
+                                showBox.innerHTML = html;
+                                showBox.style.display = "block"
+                                //添加到div后给所有a标签添加点击事件
+                                let aNodeList = document.querySelectorAll("a");
+                                for(let j = 0;j<aNodeList.length;j++){
+                                    // console.log(aNodeList[j])
+                                    let a = aNodeList[j]
+                                    a.addEventListener("click", function(){
+                                        sousuo.value = a.innerHTML
+                                        showBox.style.display = "none"
+                                    })
+                                }
+                            } else {
+                                //如果是0就要清空搜索框
+                                showBox.innerHTML = null;
+                            }
+                        } else {
+                            //状态码有问题的处理情况
+                        }
+                    }
+                })
+                //3.
+                xhr.open("GET", "/ajax/zidongrequest?keyword=" + sousuo.value, true)
+                //4.
+                xhr.send()
+            })
+
+
+        }
+    </script>
+</head>
+<body>
+<!--1. 写一个搜索框-->
+<div width="100px" align="center">
+    <input type="text" class="sousuo">
+    <button width="10px" height="10px" class="btn">摆渡一下</button>
+    <br>
+    <div class="showBox">
+        <!--        <a href="#">test</a>-->
+        <!--        <a href="#">test</a>-->
+        <!--        <a href="#">test</a>-->
+    </div>
+</div>
+
+<!--2. 注册keyup事件， 监听搜索框的文本-->
+
+<!--3. 事件里面发送ajax请求，把每次监听到的内容作为参数传给后端-->
+
+<!--4. 解析后端传回来的json文件，展示到搜索框中-->
+</body>
+</html>

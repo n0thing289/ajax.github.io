@@ -15,22 +15,56 @@
                 data: "",
                 success: function (responseText) { //响应了一个json对象数组
                     // console.log(responseText)
-
                     let jsonArr = JSON.parse(responseText);
                     let option = ""
                     for (let i = 0; i < jsonArr.length; i++) {
                         let json = jsonArr[i]
-
-                        option += "<option value='" + json.id + "'>" + json.name + "</option>"
+                        option += "<option value='" + json.code + "'>" + json.name + "</option>"
                     }
                     //拿到下拉菜单对象，修改内容
                     $(".provinces").html(option)
+
+                    //根据第一个的option再发送第一次的市的数据
+                    let optionVal = $(".provinces").val()
+                    $.ajax({
+                        method: "GET",
+                        url: "/ajax/ajaxrequest13/getcities",
+                        async: true,
+                        data: "pcode=" + optionVal,
+                        success: function (responseCities) {
+                            let jsonArr = JSON.parse(responseCities);
+                            let option = ""
+                            for (let i = 0; i < jsonArr.length; i++) {
+                                let json = jsonArr[i]
+                                option += "<option value='" + json.code + "'>" + json.name + "</option>"
+                            }
+                            //拿到下拉菜单对象，修改内容
+                            $(".cities").html(option)
+                        }
+                    })
                 }
             })
-
-            $(".provinces").change(function(){
-
-                console.log($(".provinces").val())
+            //后面onchange发生了在修改即可就是最终用户的选择
+            $(".provinces").change(function () {
+                //change事件发生更新一下用户的选择
+                let optionVal = $(".provinces").val()
+                //将optionVal 发送给后端, 后端查表对应的区再返回给前端
+                $.ajax({
+                    method: "GET",
+                    url: "/ajax/ajaxrequest13/getcities",
+                    async: true,
+                    data: "pcode=" + optionVal,
+                    success: function (responseCities) {
+                        let jsonArr = JSON.parse(responseCities);
+                        let option = ""
+                        for (let i = 0; i < jsonArr.length; i++) {
+                            let json = jsonArr[i]
+                            option += "<option value='" + json.code + "'>" + json.name + "</option>"
+                        }
+                        //拿到下拉菜单对象，修改内容
+                        $(".cities").html(option)
+                    }
+                })
             })
         })
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试ajax不跨域</title>
+    <script src="js/jQuery.js"></script>
+    <script>
+        $(() => {
+            $(".btn").click(() => {
+                $.ajax({
+                    method: "GET",
+                    url: "http://localhost:8082/b/try",
+                    async: true,
+                    data: '',
+                    success: function (responseText) {
+                        $(".myDiv").html(responseText)
+                    }
+
+                })
+            })
+        })
+    </script>
+
+</head>
+<body>
+<button class="btn">尝试使用ajax发送跨域请求</button>
+
+<div class="myDiv"></div>
+</body>
+</html>

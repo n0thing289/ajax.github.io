@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用已经封装好的jQuery来使用jsonp</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        function sayHello(data){
+            $(".showBox").html(data.name)
+        }
+        $(() =>{
+            $(".myBtn").click(()=>{
+                $.ajax({
+                    type:"GET",
+                    url:"http://localhost:8082/b/jsonp",
+                    dataType:"jsonp",
+                    jsonp:"fun",
+                    jsonpCallback:"sayHello"
+                })
+            })
+
+        })
+    </script>
+</head>
+<body>
+<button class="myBtn">点击按钮,发送一个script请求并执行在下方</button>
+<div class="showBox"></div>
+</body>
+</html>
