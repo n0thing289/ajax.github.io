@@ -9,21 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95742093-11c6-45d8-84b1-52544468d43d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/a_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/b_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a/a.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b/b.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajax/src/servlet/AjaxRequestServlet13.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/src/servlet/AjaxRequestServlet13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajax/web/ajax13connect.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/ajax13connect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/WEB-INF/classes/servlet/AjaxRequestServlet13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/WEB-INF/classes/servlet/AjaxRequestServlet13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/ajax13connect.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ajax_war_exploded/ajax13connect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../笔记/AJAX.md" beforeDir="false" afterPath="$PROJECT_DIR$/../笔记/AJAX.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../笔记/省市联动数据表.sql" beforeDir="false" />
-    </list>
+    <list default="true" id="95742093-11c6-45d8-84b1-52544468d43d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +48,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/Myapps/maven/apache-maven-3.3.9" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Myapps/maven/apache-maven-3.3.9" />
         <option name="userSettingsFile" value="D:\Myapps\maven\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -83,7 +69,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/a/web/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -339,6 +325,7 @@
       <workItem from="1699072824124" duration="14467000" />
       <workItem from="1699248063461" duration="6924000" />
       <workItem from="1699413695971" duration="1666000" />
+      <workItem from="1700368448425" duration="12000" />
     </task>
     <servers />
   </component>
